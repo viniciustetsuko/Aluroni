@@ -35,6 +35,7 @@ export default function Itens(props: props) {
   useEffect(() => {
 const novaLista = cardapio.filter(item => testaBusca(item.title) && testaFiltro(item.category.id));
 setLista(ordenar(novaLista));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [busca, filtro, ordenador]);
 
   return (

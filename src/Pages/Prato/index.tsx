@@ -14,7 +14,7 @@ export default function Pratos() {
   }
   return (
     <PaginaPadrao>
-      <button className={style.voltar} onClick={() => navigate(-1)}>
+      <button className={style.voltar} onClick={() => navigate('/cardapio)}>
         {'< Voltar'}
       </button>
       <section className={style.container}>
